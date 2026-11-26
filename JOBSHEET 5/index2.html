@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Akselerasi Landing Page - Bootstrap 5</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+
+    <style>
+        .hero-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #e0e7ff 0%, #eef2f6 100%);
+        }
+
+        /* Tampilan gambar Carousel */
+        .carousel-item img {
+            height: 450px;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+        /* Caption Carousel */
+        .carousel-caption {
+            bottom: 25%;
+        }
+
+        .carousel-caption h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .carousel-caption p {
+            font-size: 1.1rem;
+        }
+
+        /* Supaya tampilan tetap bagus di HP */
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 300px;
+            }
+
+            .carousel-caption {
+                bottom: 15%;
+            }
+
+            .carousel-caption h2 {
+                font-size: 1.6rem;
+            }
+
+            .carousel-caption p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold text-info" href="#">
+                DevPortfolio
+            </a>
+
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            Beranda
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio-section">
+                            Karya Portofolio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#layanan-section">
+                            Layanan
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ================================================= -->
+    <!-- TUGAS MANDIRI: BOOTSTRAP CAROUSEL / HERO BANNER -->
+    <!-- ================================================= -->
+
+    <section class="py-4 mb-5">
+
+        <div class="container">
+
+            <div 
+                id="carouselPortfolio" 
+                class="carousel slide carousel-fade shadow rounded overflow-hidden"
+                data-bs-ride="carousel"
+            >
+
+                <!-- INDIKATOR CAROUSEL -->
+                <div class="carousel-indicators">
+
+                    <button 
+                        type="button"
+                        data-bs-target="#carouselPortfolio"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+
+                    <button 
+                        type="button"
+                        data-bs-target="#carouselPortfolio"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                    ></button>
+
+                    <button 
+                        type="button"
+                        data-bs-target="#carouselPortfolio"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                    ></button>
+
+                </div>
+
+
+                <!-- ISI CAROUSEL -->
+                <div class="carousel-inner">
+
+
+                    <!-- SLIDE 1 -->
+                    <div class="carousel-item active">
+
+                        <img 
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&auto=format&fit=crop&q=80"
+                            class="d-block w-100"
+                            alt="Web Development"
+                        >
+
+                        <div class="carousel-caption d-block">
+
+                            <h2>Web Development Modern</h2>
+
+                            <p>
+                                Membangun website modern, responsif, dan
+                                mudah digunakan menggunakan teknologi web.
+                            </p>
+
+                            <a href="#portfolio-section" class="btn btn-primary">
+                                Lihat Portofolio
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SLIDE 2 -->
+                    <div class="carousel-item">
+
+                        <img 
+                            src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&auto=format&fit=crop&q=80"
+                            class="d-block w-100"
+                            alt="UI UX Design"
+                        >
+
+                        <div class="carousel-caption d-block">
+
+                            <h2>UI/UX Design</h2>
+
+                            <p>
+                                Merancang tampilan antarmuka yang menarik,
+                                nyaman, dan responsif untuk berbagai perangkat.
+                            </p>
+
+                            <a href="#portfolio-section" class="btn btn-primary">
+                                Lihat Karya
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SLIDE 3 -->
+                    <div class="carousel-item">
+
+                        <img 
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop&q=80"
+                            class="d-block w-100"
+                            alt="Data Analytics"
+                        >
+
+                        <div class="carousel-caption d-block">
+
+                            <h2>Data & Digital Technology</h2>
+
+                            <p>
+                                Mengembangkan solusi digital dengan teknologi
+                                modern untuk kebutuhan bisnis dan pengguna.
+                            </p>
+
+                            <a href="#portfolio-section" class="btn btn-primary">
+                                Pelajari Lebih Lanjut
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOMBOL PREVIOUS -->
+                <button 
+                    class="carousel-control-prev" 
+                    type="button"
+                    data-bs-target="#carouselPortfolio"
+                    data-bs-slide="prev"
+                >
+
+                    <span 
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+
+                    <span class="visually-hidden">
+                        Previous
+                    </span>
+
+                </button>
+
+
+                <!-- TOMBOL NEXT -->
+                <button 
+                    class="carousel-control-next" 
+                    type="button"
+                    data-bs-target="#carouselPortfolio"
+                    data-bs-slide="next"
+                >
+
+                    <span 
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+
+                    <span class="visually-hidden">
+                        Next
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- PORTFOLIO -->
+    <!-- ========================= -->
+
+    <section id="portfolio-section" class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="fw-bold">
+                    Karya Unggulan Portofolio
+                </h2>
+
+                <p class="text-muted">
+                    Daftar project aplikasi web komersial yang telah berhasil dirilis ke publik
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- PROJECT 1 -->
+                <div class="col-12 col-md-4">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <img 
+                            src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=500&auto=format&fit=crop&q=60"
+                            class="card-img-top"
+                            alt="Project Satu"
+                        >
+
+                        <div class="card-body">
+
+                            <h5 class="card-title fw-bold">
+                                E-Commerce Web Application
+                            </h5>
+
+                            <p class="card-text text-secondary">
+                                Sistem penjualan retail multi-toko terintegrasi
+                                gerbang pembayaran otomatis online modern.
+                            </p>
+
+                        </div>
+
+                        <div class="card-footer bg-transparent border-0 pb-3">
+
+                            <button class="btn btn-outline-primary btn-sm w-100">
+                                Lihat Dokumentasi
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 2 -->
+                <div class="col-12 col-md-4">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <img 
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60"
+                            class="card-img-top"
+                            alt="Project Dua"
+                        >
+
+                        <div class="card-body">
+
+                            <h5 class="card-title fw-bold">
+                                SaaS Dashboard Analytics
+                            </h5>
+
+                            <p class="card-text text-secondary">
+                                Dasbor pengolah data bisnis perusahaan real-time
+                                lengkap dengan visualisasi grafik interaktif.
+                            </p>
+
+                        </div>
+
+                        <div class="card-footer bg-transparent border-0 pb-3">
+
+                            <button class="btn btn-outline-primary btn-sm w-100">
+                                Lihat Dokumentasi
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 3 -->
+                <div class="col-12 col-md-4">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <img 
+                            src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500&auto=format&fit=crop&q=60"
+                            class="card-img-top"
+                            alt="Project Tiga"
+                        >
+
+                        <div class="card-body">
+
+                            <h5 class="card-title fw-bold">
+                                Company Profile Web AI
+                            </h5>
+
+                            <p class="card-text text-secondary">
+                                Landing page agensi digital modern yang dioptimasi
+                                penuh menggunakan teknologi kecerdasan buatan.
+                            </p>
+
+                        </div>
+
+                        <div class="card-footer bg-transparent border-0 pb-3">
+
+                            <button class="btn btn-outline-primary btn-sm w-100">
+                                Lihat Dokumentasi
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- MODAL KONTAK -->
+    <!-- ========================= -->
+
+    <div 
+        class="modal fade" 
+        id="modalKontak" 
+        tabindex="-1"
+        aria-labelledby="modalKontakLabel" 
+        aria-hidden="true"
+    >
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+
+                    <h5 class="modal-title fw-bold" id="modalKontakLabel">
+                        Formulir Pesan Konsultasi
+                    </h5>
+
+                    <button 
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+
+                </div>
+
+
+                <div class="modal-body p-4">
+
+                    <form>
+
+                        <div class="mb-3">
+
+                            <label 
+                                for="form-email" 
+                                class="form-label fw-semibold"
+                            >
+                                Alamat Email Aktif
+                            </label>
+
+                            <input 
+                                type="email"
+                                class="form-control"
+                                id="form-email"
+                                placeholder="nama@sekolah.sch.id"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label 
+                                for="form-pesan"
+                                class="form-label fw-semibold"
+                            >
+                                Isi Keperluan Pesan
+                            </label>
+
+                            <textarea 
+                                class="form-control"
+                                id="form-pesan"
+                                rows="4"
+                                placeholder="Tulis rincian kebutuhan web application Anda..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="d-grid mt-4">
+
+                            <button 
+                                type="submit"
+                                class="btn btn-primary fw-bold"
+                            >
+                                Kirim Pesan Sekarang
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS Bundle dengan Popper.js -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>

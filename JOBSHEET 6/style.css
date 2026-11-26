@@ -1,0 +1,343 @@
+/* =========================
+   STYLE DASAR
+========================= */
+
+body {
+    background-color: #fff8fb;
+    color: #5b4650;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.cute-navbar {
+    background-color: #ffdce9;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(180, 100, 130, 0.1);
+}
+
+.logo {
+    color: #d65b85 !important;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav-link {
+    color: #765866 !important;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #d65b85 !important;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+    background-color: #fff0f5;
+    padding: 80px 0;
+}
+
+.small-title {
+    color: #d65b85;
+    font-weight: bold;
+}
+
+.hero-section h1 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #5b4650;
+}
+
+.hero-section h1 span {
+    color: #df7097;
+}
+
+.hero-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #806b74;
+    margin: 20px 0;
+}
+
+.cute-btn {
+    background-color: #f86ea1;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.cute-btn:hover {
+    background-color: #d9658e;
+    color: white;
+}
+
+.hero-card {
+    background-color: #ffd5e5;
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    box-shadow: 0 10px 30px rgba(210, 100, 140, 0.15);
+}
+
+
+/* =========================
+   JUDUL SECTION
+========================= */
+
+.product-section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title p {
+    color: #df7097;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    color: #5b4650;
+    font-weight: bold;
+}
+
+.section-title span {
+    color: #927d85;
+}
+
+
+/* =========================
+   SIDEBAR KATEGORI
+========================= */
+
+.category-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #f2d7e1;
+    box-shadow: 0 5px 15px rgba(180, 100, 130, 0.08);
+}
+
+.category-box h4 {
+    color: #d65b85;
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 10px 12px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    color: #765866;
+    cursor: pointer;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background-color: #ffe1eb;
+    color: #d65b85;
+    font-weight: bold;
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+    background-color: white;
+    border: 1px solid #f3dce4;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(210, 100, 140, 0.15);
+}
+
+.product-image {
+    height: 180px;
+    background-color: #fff0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-category {
+    font-size: 12px;
+    color: #df7097;
+    font-weight: bold;
+}
+
+.product-info h3 {
+    font-size: 19px;
+    margin-top: 7px;
+    color: #5b4650;
+}
+
+.product-info p {
+    color: #8a777e;
+    font-size: 14px;
+}
+
+.product-info strong {
+    display: block;
+    color: #d65b85;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.buy-btn {
+    width: 100%;
+    border: none;
+    background-color: #f4a2bd;
+    color: white;
+    padding: 9px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #df7097;
+}
+
+
+/* =========================
+   KERANJANG
+========================= */
+
+.cart-section {
+    padding: 50px 0;
+    background-color: #fff0f5;
+}
+
+.cart-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #f3dce4;
+}
+
+.cart-box h2 {
+    color: #d65b85;
+}
+
+#total-harga {
+    color: #d65b85;
+    font-size: 22px;
+}
+
+.checkout-btn {
+    border: none;
+    background-color: #d65b85;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.checkout-btn:hover {
+    background-color: #b94870;
+}
+
+
+/* =========================
+   TENTANG
+========================= */
+
+.about-section {
+    padding: 70px 0;
+}
+
+.about-section > .container > p:first-child {
+    color: #df7097;
+    font-weight: bold;
+}
+
+.about-section h2 {
+    color: #5b4650;
+    font-weight: bold;
+}
+
+.about-text {
+    max-width: 650px;
+    margin: 20px auto;
+    line-height: 1.8;
+    color: #806b74;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #ffdce9;
+    padding: 40px 0;
+    color: #765866;
+}
+
+footer h3 {
+    color: #d65b85;
+}
+
+footer small {
+    color: #9b7e89;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 34px;
+    }
+
+    .hero-card {
+        width: 220px;
+        height: 220px;
+        font-size: 90px;
+        margin-top: 40px;
+    }
+
+    .category-box {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,257 @@
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;500;600;700&display=swap');
+
+body {
+    background-color: #b1c9c1;
+    font-family: 'Creato Display', sans-serif;
+    color: #f5f3f3;
+    margin: 0;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #a4afba;
+}
+
+.cv-card {
+    background-color: #474646;
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 18px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    flex: 1;
+    min-width: 120px;
+    background-color: #f2f8f6;
+    color: #66787a;
+    font-weight: 700;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .cv-card {
+        padding: 15px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2? family Poppins:wght@368;400;600&display=swap');
+
+/* ====================================
+    STYLING DASAR (LIGHT MODE)
+   ==================================== */
+
+body {
+    background-color: #eef3ee;
+    font-family: 'Creato Display', sans-serif;
+    color: #040404;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #205061;
+    transition: color 0.3s ease;
+}
+
+.cv-card {
+    background-color: #f6f6f6;
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+    border-radius: 8=10px;
+    box-shadow: 8 4px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, border-color 0.35 ease, box-shadow 8.35 ease;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.skill-item {
+    flex: 1;
+    min-width: 120px;
+    background-color: #b3c2cf;
+    color: #255161;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-toggle {
+    padding: 8px 18px;
+    border-radius: 15px;
+    border: 1px solid #d3d3d3;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #3f3f3f;
+    font-family: 'Creato Display', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-toggle:hover {
+    background-color: #c0c0c0;
+}
+
+/* ====================================
+    RESPONSIVE DESIGN
+   ==================================== */
+
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .cv-card {
+        padding: 15px;
+    }
+}
+
+/* ==============================
+    DARK MODE
+   ============================== */
+
+body.dark-theme {
+    background-color: #151c1d;
+    color: #eeeeee;
+
+    /* HANYA FONT YANG BERUBAH */
+    font-family: 'Creato Display', sans-serif;
+}
+
+/* HEADER */
+body.dark-theme .cv-header {
+    color: #d8eeee;
+    font-family: 'Creato Display', sans-serif;
+}
+
+/* JUDUL UTAMA */
+body.dark-theme .cv-header h1 {
+    color: #e8f5f2;
+    font-family: 'Creato Display', sans-serif;
+}
+
+/* SUBJUDUL */
+body.dark-theme .cv-header p {
+    color: #a9c1c0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==============================
+   CARD DARK MODE
+   ============================== */
+
+body.dark-theme .cv-card {
+    /* HANYA WARNA */
+    background-color: #263234;
+    border-color: #405052;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* JUDUL CARD */
+body.dark-theme .cv-card h2 {
+    color: #c5e2de;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* TEKS CARD */
+body.dark-theme .cv-card p {
+    color: #e1e9e8;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ==============================
+   SKILL BOX DARK MODE
+   ============================== */
+
+body.dark-theme .skill-item {
+    /* HANYA WARNA */
+    background-color: #344548;
+    color: #d4ebe7;
+    border: 1px solid #4b6062;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ==============================
+   BUTTON DARK MODE
+   ============================== */
+
+body.dark-theme .btn-toggle {
+    background-color: #344548;
+    color: #e7f2f0;
+    border-color: #506264;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+body.dark-theme .btn-toggle:hover {
+    background-color: #405456;
+}
+
+/* ==============================
+   TRANSISI WARNA
+   ============================== */
+
+body,
+.cv-header,
+.cv-card,
+.skill-item,
+.btn-toggle {
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
